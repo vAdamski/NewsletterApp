@@ -1,0 +1,20 @@
+@model NewsletterApp.Models.DTO.UpdateNewsLetterContentDto
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Edit</h2>
+<form method="post" asp-controller="NewsContent" asp-action="Edit">
+    <input asp-for="Id" type="hidden"/>
+    <input asp-for="NewsLetterId" type="hidden"/>
+    <div class="form-group mb-2">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control"/>
+    </div>
+    <div class="form-floating mb-2">
+        <textarea class="form-control" asp-for="Content" placeholder="Leave a comment here" id="content" style="height: 100px"></textarea>
+        <label for="content">Content</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

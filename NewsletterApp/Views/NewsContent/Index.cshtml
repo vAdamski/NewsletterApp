@@ -1,0 +1,47 @@
+@model NewsletterApp.Models.ViewModels.NewsLetterContentVm
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>@Model.NewsLetterTitle</h2>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <a class="btn btn-success" href="@Url.Action("CreateGetView", "NewsContent", new { newsLetterId = Model.NewsLetterId })">Create news</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped text-center">
+                <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Send</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model.NewsLetterContentDtos)
+                {
+                    <tr>
+                        <td>@item.Title</td>
+                        <td>
+                            <a class="btn btn-success">Send</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-warning" href="@Url.Action("Edit", "NewsContent", new { id = item.Id })">Edit</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger" href="@Url.Action("Delete", "NewsContent", new { id = item.Id, newsLetterId = Model.NewsLetterId })">Delete</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -22,13 +22,10 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" href="#">Home</a>
                     </li>
-                    <li class="nav-item" class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Login">Login</a>
-                    </li>
                     @if (User.IsInRole("admin"))
                     {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#">Admin Page</a>
+                            <a class="nav-link text-dark" asp-controller="NewsLetter" asp-action="Index">News Letters</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Registration">Registration</a>
@@ -43,6 +40,12 @@
                             <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Logout">Logout</a>
                         </li>
                     }
+                    else
+                    {
+                        <li class="nav-item" class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Login">Login</a>
+                        </li>
+                    }
                 </ul>
             </div>
         </div>
@@ -53,12 +56,6 @@
         @RenderBody()
     </main>
 </div>
-
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2023 - NewsletterApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>

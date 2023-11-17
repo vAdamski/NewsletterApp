@@ -1,0 +1,18 @@
+@model NewsletterApp.Models.DTO.EditNewsLetterDto
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Edit News Letter</h2>
+
+<form method="post" asp-controller="NewsLetter" asp-action="SaveEdit">
+    <input asp-for="Id" type="hidden"/>
+    <div class="form-group mb-2">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

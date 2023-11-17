@@ -1,0 +1,16 @@
+@model NewsletterApp.Models.DTO.CreateNewsLetterDto
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Create News Letter</h2>
+
+<form method="post" asp-controller="NewsLetter" asp-action="Create">
+    <div class="form-group mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
