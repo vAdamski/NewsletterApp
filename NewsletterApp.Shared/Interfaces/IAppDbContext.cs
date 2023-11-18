@@ -3,7 +3,7 @@ using NewsletterApp.Shared.Models.Entities;
 
 namespace NewsletterApp.Shared.Interfaces;
 
-public interface IAppAppDbContext
+public interface IAppDbContext
 {
     DbSet<NewsLetter> NewsLetters { get; set; }
     DbSet<NewsContent> NewsContents { get; set; }
