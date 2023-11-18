@@ -1,6 +1,7 @@
 ﻿FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["NewsletterApp/NewsletterApp.csproj", "NewsletterApp/"]
+COPY ["NewsletterApp.Shared/NewsletterApp.Shared.csproj", "NewsletterApp.Shared/"]
 RUN dotnet restore "NewsletterApp/NewsletterApp.csproj"
 COPY . .
 WORKDIR "/src/NewsletterApp"
