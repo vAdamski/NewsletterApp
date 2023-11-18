@@ -19,8 +19,8 @@
                 @foreach (var item in Model.NewsLetterDtos)
                 {
                     <tr>
-                        <td><a href="@Url.Action("Index", "NewsContent", new { id = item.Id })">@item.Name</a></td>
-                        <td><a class="btn btn-warning" href="@Url.Action("Edit", "NewsLetter", new { id = item.Id })">Edit</a></td>
+                        <td><a class="nav-link text-dark">@item.Name</a></td>
+                        <td><a class="btn btn-warning" href="@Url.Action("Subscribe", "NewsLetter", new { id = item.Id })">Subscribe</a></td>
                     </tr>
                 }
                 </tbody>

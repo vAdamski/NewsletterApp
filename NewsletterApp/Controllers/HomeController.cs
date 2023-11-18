@@ -1,10 +1,12 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NewsletterApp.Logic.Interfaces;
 using NewsletterApp.Models;
 
 namespace NewsletterApp.Controllers;
 
+[AllowAnonymous]
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
@@ -16,9 +18,9 @@ public class HomeController : Controller
         _newLettersService = newLettersService;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        var response = _newLettersService.GetList();
+        var response = await _newLettersService.GetList();
         
         return View(response);
     }

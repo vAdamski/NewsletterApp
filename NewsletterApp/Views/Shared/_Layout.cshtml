@@ -19,9 +19,15 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Home</a>
-                    </li>
+                    @if (string.IsNullOrEmpty(User.Identity.Name))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Home</a>
+                        </li>
+                        <li class="nav-item" class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Login">Login</a>
+                        </li>
+                    }
                     @if (User.IsInRole("admin"))
                     {
                         <li class="nav-item">
@@ -30,20 +36,11 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Registration">Registration</a>
                         </li>
-                    }
-                    @if (!string.IsNullOrEmpty(User.Identity.Name))
-                    {
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="ChangePassword">ChangePassword</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Logout">Logout</a>
-                        </li>
-                    }
-                    else
-                    {
-                        <li class="nav-item" class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="UserAuthentication" asp-action="Login">Login</a>
                         </li>
                     }
                 </ul>

@@ -10,6 +10,6 @@ public interface INewLettersService
     Task<NewsLettersListVm> GetList();
     Task<EditNewsLetterDto> GetEditDto(Guid id);
     Task<Status> SaveEditedNewsLetter(EditNewsLetterDto dto);
-    Task<Status> Unsubscribe(Guid newsletterId, string email);
+    Task<Status> Unsubscribe(Guid newsletterId, Guid subscriberId);
     Task<Status> Subscribe(Guid newsletterId, string email);
 }

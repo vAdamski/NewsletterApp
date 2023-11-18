@@ -1,8 +1,14 @@
-@model dynamic
+@model NewsletterApp.Models.DTO.UnsubscribeNewsLetterDto
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<h2>Confirm unsubscribe</h2>
+
+<form method="post" asp-controller="NewsLetter" asp-action="Unsubscribe">
+    <input asp-for="NewsLetterId"/>
+    <input asp-for="Email"/>
+<button type="submit" class="btn btn-primary">Unsubscribe</button>
+</form>

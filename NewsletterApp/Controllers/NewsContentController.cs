@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NewsletterApp.Logic.Interfaces;
 using NewsletterApp.Models.DTO;
 
 namespace NewsletterApp.Controllers;
 
+[Authorize]
 public class NewsContentController : Controller
 {
     private readonly INewsLetterContentsService _newsLetterContentsService;

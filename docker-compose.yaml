@@ -9,3 +9,22 @@ services:
       - MSSQL_SA_PASSWORD=Pass1234$
     ports:
       - 10000:1433
+  
+  newsletter:
+    image: newsletter
+    container_name: newsletter
+    build:
+      context: .
+      dockerfile: ./NewsletterApp/Dockerfile
+    ports:
+      - 12000:80
+      - 12001:443
+    environment:
+      - ASPNETCORE_URLS=https://+;http://+
+      - ASPNETCORE_HTTPS_PORT=12001
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=pA55word!
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/NewsletterApp.pfx
+      - CONNECTION_STRING=Server=host.docker.internal,10000;Initial Catalog=NewsLetterDatabase;User ID=sa;Password=Pass1234$;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;Persist Security Info=False;
+    volumes:
+      - ${HOME}/.aspnet/https:/https/

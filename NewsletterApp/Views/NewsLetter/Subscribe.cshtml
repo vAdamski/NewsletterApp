@@ -1,8 +1,16 @@
-@model dynamic
+@model NewsletterApp.Models.DTO.SubscribeNewsLetterDto
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Subscribe";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+<h2>Subscribe</h2>
+<form method="post" asp-controller="NewsLetter" asp-action="Subscribe">
+    <input asp-for="NewsLetterId" value="@ViewBag.NewsLetterId" type="hidden"/>
+    <div class="form-group mb-2">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Subscribe</button>
+</form>

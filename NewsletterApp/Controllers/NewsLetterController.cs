@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NewsletterApp.Logic.Interfaces;
 using NewsletterApp.Models.DTO;
 
 namespace NewsletterApp.Controllers;
 
+[Authorize]
 public class NewsLetterController : Controller
 {
     private readonly INewLettersService _newLettersService;
@@ -20,16 +22,31 @@ public class NewsLetterController : Controller
         return View(model);
     }
     
-    public async Task<IActionResult> Subscribe(string email, Guid newsLetterId)
+    [HttpGet]
+    [AllowAnonymous]
+    public async Task<IActionResult> Subscribe(Guid id)
     {
-        var result = await _newLettersService.Subscribe(newsLetterId, email);
+        ViewBag.NewsLetterId = id;
+        
+        return View();
+    }
+    
+    [HttpPost]
+    [AllowAnonymous]
+    public async Task<IActionResult> Subscribe(SubscribeNewsLetterDto dto)
+    {
+        var result = await _newLettersService.Subscribe(dto.NewsLetterId, dto.Email);
         
         return RedirectToAction("Index", "Home");
     }
     
-    public async Task<IActionResult> Unsubscribe(string email, Guid newsLetterId)
+    [AllowAnonymous]
+    public async Task<IActionResult> Unsubscribe(Guid subscriberId, Guid newsLetterId)
     {
-        return RedirectToAction("Index", "Home");
+        var result = await _newLettersService.Unsubscribe(newsLetterId, subscriberId);
+        
+        ViewBag.Message = result.Message;
+        return View("UnsubscribeInfo");
     }
     
     public IActionResult Create()

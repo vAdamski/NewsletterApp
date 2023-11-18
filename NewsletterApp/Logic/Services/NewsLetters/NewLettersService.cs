@@ -145,7 +145,7 @@ public class NewLettersService : INewLettersService
         };
     }
     
-    public async Task<Status> Unsubscribe(Guid newsletterId, string email)
+    public async Task<Status> Unsubscribe(Guid newsletterId, Guid subscriberId)
     {
         var newsLetter = await _ctx.NewsLetters.Where(x => x.Id == newsletterId)
             .Include(x => x.NewsLetterSubscribers)
@@ -160,7 +160,7 @@ public class NewLettersService : INewLettersService
             };
         }
         
-        var entity = newsLetter.NewsLetterSubscribers.FirstOrDefault(x => x.Email == email);
+        var entity = newsLetter.NewsLetterSubscribers.FirstOrDefault(x => x.Id == subscriberId);
         
         if (entity == null)
         {
