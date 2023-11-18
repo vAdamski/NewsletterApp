@@ -1,4 +1,4 @@
-namespace NewsletterApp.Models;
+namespace NewsletterApp.Shared.Models;
 
 public class ErrorViewModel
 {

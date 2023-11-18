@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NewsletterApp.Logic.Interfaces;
-using NewsletterApp.Models.DTO;
+using NewsletterApp.Shared.Models.DTO;
 
 namespace NewsletterApp.Controllers;
 

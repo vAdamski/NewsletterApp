@@ -1,6 +1,6 @@
-namespace NewsletterApp.Models.DTO;
+namespace NewsletterApp.Shared.Models.DTO;
 
-public class UnsubscribeNewsLetterDto
+public class SubscribeNewsLetterDto
 {
     public Guid NewsLetterId { get; set; }
     public string Email { get; set; }

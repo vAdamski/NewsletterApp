@@ -28,4 +28,8 @@
       <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="7.0.14" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\NewsletterApp.Shared\NewsletterApp.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

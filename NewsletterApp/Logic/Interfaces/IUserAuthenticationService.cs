@@ -1,4 +1,4 @@
-using NewsletterApp.Models.DTO;
+using NewsletterApp.Shared.Models.DTO;
 
 namespace NewsletterApp.Logic.Interfaces;
 

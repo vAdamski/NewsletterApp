@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 
-namespace NewsletterApp.Models.Entities;
+namespace NewsletterApp.Shared.Models.Entities;
 
 public class ApplicationUser : IdentityUser
 {

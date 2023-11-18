@@ -1,6 +1,6 @@
-using NewsletterApp.Models.Common;
+using NewsletterApp.Shared.Models.Common;
 
-namespace NewsletterApp.Models.Entities;
+namespace NewsletterApp.Shared.Models.Entities;
 
 public class NewsLetter : AuditableEntity
 {

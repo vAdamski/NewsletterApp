@@ -5,7 +5,7 @@ using NewsletterApp.Logic.Interfaces;
 using NewsletterApp.Logic.Services;
 using NewsletterApp.Logic.Services.NewsLetterContents;
 using NewsletterApp.Logic.Services.NewsLetters;
-using NewsletterApp.Models.Entities;
+using NewsletterApp.Shared.Models.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +40,13 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+}
+
+
+using(var scope = app.Services.CreateAsyncScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.EnsureCreated();
 }
 
 app.UseHttpsRedirection();

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace NewsletterApp.Models.DTO;
+namespace NewsletterApp.Shared.Models.DTO;
 
 public class CreateNewsLetterDto
 {

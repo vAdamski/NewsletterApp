@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using NewsletterApp.Logic.Database;
 using NewsletterApp.Logic.Interfaces;
-using NewsletterApp.Models.DTO;
-using NewsletterApp.Models.Entities;
-using NewsletterApp.Models.ViewModels;
+using NewsletterApp.Shared.Models.DTO;
+using NewsletterApp.Shared.Models.Entities;
+using NewsletterApp.Shared.Models.ViewModels;
 
 namespace NewsletterApp.Logic.Services.NewsLetterContents;
 

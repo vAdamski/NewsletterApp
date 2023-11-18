@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using NewsletterApp.Models.Common;
-using NewsletterApp.Models.Entities;
+using NewsletterApp.Shared.Models.Common;
+using NewsletterApp.Shared.Models.Entities;
 
 namespace NewsletterApp.Logic.Database;
 

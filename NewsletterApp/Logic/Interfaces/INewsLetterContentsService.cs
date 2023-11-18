@@ -1,5 +1,7 @@
-using NewsletterApp.Models.DTO;
-using NewsletterApp.Models.ViewModels;
+
+
+using NewsletterApp.Shared.Models.DTO;
+using NewsletterApp.Shared.Models.ViewModels;
 
 namespace NewsletterApp.Logic.Interfaces;
 

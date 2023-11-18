@@ -1,8 +1,8 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using NewsletterApp.Logic.Interfaces;
-using NewsletterApp.Models.DTO;
-using NewsletterApp.Models.Entities;
+using NewsletterApp.Shared.Models.DTO;
+using NewsletterApp.Shared.Models.Entities;
 
 namespace NewsletterApp.Logic.Services;
 

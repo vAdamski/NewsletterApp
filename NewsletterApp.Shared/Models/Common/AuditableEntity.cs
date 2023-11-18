@@ -1,4 +1,4 @@
-namespace NewsletterApp.Models.Common;
+namespace NewsletterApp.Shared.Models.Common;
 
 public class AuditableEntity
 {

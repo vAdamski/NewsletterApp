@@ -1,6 +1,6 @@
-using NewsletterApp.Models.DTO;
+using NewsletterApp.Shared.Models.DTO;
 
-namespace NewsletterApp.Models.ViewModels;
+namespace NewsletterApp.Shared.Models.ViewModels;
 
 public class NewsLetterContentVm
 {
