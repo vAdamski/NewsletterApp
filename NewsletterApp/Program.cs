@@ -5,6 +5,7 @@ using NewsletterApp.Logic.Interfaces;
 using NewsletterApp.Logic.Services;
 using NewsletterApp.Logic.Services.NewsLetterContents;
 using NewsletterApp.Logic.Services.NewsLetters;
+using NewsletterApp.Shared.Interfaces;
 using NewsletterApp.Shared.Models.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,9 +29,10 @@ builder.Services.AddControllersWithViews();
 
 //DI
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
-builder.Services.AddScoped<IAppAppDbContext, AppDbContext>();
+builder.Services.AddScoped<IAppDbContext, AppDbContext>();
 builder.Services.AddScoped<INewLettersService, NewLettersService>();
 builder.Services.AddScoped<INewsLetterContentsService, NewsLetterContentsService>();
+builder.Services.AddScoped<IHttpService, HttpService>();
 
 var app = builder.Build();
 

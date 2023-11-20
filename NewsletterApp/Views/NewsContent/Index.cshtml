@@ -30,7 +30,7 @@
                     <tr>
                         <td>@item.Title</td>
                         <td>
-                            <a class="btn btn-success">Send</a>
+                            <a class="btn btn-success" href="@Url.Action("Send","NewsContent", new {id = item.Id, newsLetterId = Model.NewsLetterId})">Send</a>
                         </td>
                         <td>
                             <a class="btn btn-warning" href="@Url.Action("Edit", "NewsContent", new { id = item.Id })">Edit</a>

@@ -1,3 +1,4 @@
+using System.Net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NewsletterApp.Logic.Interfaces;
@@ -9,10 +10,16 @@ namespace NewsletterApp.Controllers;
 public class NewsContentController : Controller
 {
     private readonly INewsLetterContentsService _newsLetterContentsService;
+    private readonly IHttpService _httpService;
+    private readonly ILogger<NewsContentController> _logger;
 
-    public NewsContentController(INewsLetterContentsService newsLetterContentsService)
+    public NewsContentController(INewsLetterContentsService newsLetterContentsService,
+        IHttpService httpService,
+        ILogger<NewsContentController> logger)
     {
         _newsLetterContentsService = newsLetterContentsService;
+        _httpService = httpService;
+        _logger = logger;
     }
     
     public async Task<IActionResult> Index(Guid id)
@@ -70,5 +77,22 @@ public class NewsContentController : Controller
         var response = await _newsLetterContentsService.Delete(id);
         
         return RedirectToAction("Index", new { id = newsLetterId });
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Send(Guid id, Guid newsLetterId)
+    {
+        var url = $"{Environment.GetEnvironmentVariable("MAIL_SENDER_URL")}/MailSender/SendMails?id={id}";
+
+        try
+        {
+            var response = await _httpService.GetAsync(url);
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e.Message);
+        }
+        
+        return RedirectToAction("Index", "NewsLetter", new { id = newsLetterId });
     }
 }

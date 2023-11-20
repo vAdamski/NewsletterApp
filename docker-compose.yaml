@@ -26,5 +26,31 @@ services:
       - ASPNETCORE_Kestrel__Certificates__Default__Password=pA55word!
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/NewsletterApp.pfx
       - CONNECTION_STRING=Server=host.docker.internal,10000;Initial Catalog=NewsLetterDatabase;User ID=sa;Password=Pass1234$;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;Persist Security Info=False;
+      - MAIL_SENDER_URL=http://172.21.0.4:13000
+    volumes:
+      - ${HOME}/.aspnet/https:/https/
+        
+        
+  mail-sender:
+    image: mail-sender
+    container_name: mail-sender
+    build:
+      context: .
+      dockerfile: ./NewsletterApp.MailSender/Dockerfile
+    ports:
+        - 13000:80
+        - 13001:443
+    environment:
+      - ASPNETCORE_URLS=https://+;http://+
+      - ASPNETCORE_HTTPS_PORT=13001
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=pA55word!
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/NewsletterApp.MailSender.pfx
+      - CONNECTION_STRING=Server=host.docker.internal,10000;Initial Catalog=NewsLetterDatabase;User ID=sa;Password=Pass1234$;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;Persist Security Info=False;
+      - EMAIL_FROM=adam.ludwiczak98@gmail.com
+      - EMAIL_SMTP_SERVER=smtp.gmail.com
+      - EMAIL_SMTP_PORT=465
+      - EMAIL_USERNAME=adam.ludwiczak98@gmail.com
+      - EMAIL_PASSWORD=mstolhslzrqkaomv
     volumes:
       - ${HOME}/.aspnet/https:/https/

@@ -4,7 +4,7 @@ using NewsletterApp.Shared.Interfaces;
 using NewsletterApp.Shared.Models.Common;
 using NewsletterApp.Shared.Models.Entities;
 
-namespace NewsletterApp.Logic.Database;
+namespace NewsletterApp.MailSender;
 
 public class AppDbContext : IdentityDbContext<ApplicationUser>, IAppDbContext
 {

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using NewsletterApp.Logic.Database;
 using NewsletterApp.Logic.Interfaces;
+using NewsletterApp.Shared.Interfaces;
 using NewsletterApp.Shared.Models.DTO;
 using NewsletterApp.Shared.Models.Entities;
 using NewsletterApp.Shared.Models.ViewModels;
@@ -9,9 +9,9 @@ namespace NewsletterApp.Logic.Services.NewsLetters;
 
 public class NewLettersService : INewLettersService
 {
-    private readonly IAppAppDbContext _ctx;
+    private readonly IAppDbContext _ctx;
 
-    public NewLettersService(IAppAppDbContext _ctx)
+    public NewLettersService(IAppDbContext _ctx)
     {
         this._ctx = _ctx;
     }
