@@ -22,6 +22,7 @@ public class MailSenderController : ControllerBase
     }
 
     [HttpGet]
+    [Route("SendMails/{id}")]
     public async Task<IActionResult> SendMails(Guid id)
     {
         var newsLetter = await _ctx.NewsContents

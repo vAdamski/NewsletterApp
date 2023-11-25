@@ -30,7 +30,7 @@
                     <tr>
                         <td>@item.Title</td>
                         <td>
-                            <a class="btn btn-success" href="@Url.Action("Send","NewsContent", new {id = item.Id, newsLetterId = Model.NewsLetterId})">Send</a>
+                            <a id="sendButton" class="btn btn-success" href="https://localhost:13001/MailSender/SendMails/@item.Id">Send</a>
                         </td>
                         <td>
                             <a class="btn btn-warning" href="@Url.Action("Edit", "NewsContent", new { id = item.Id })">Edit</a>
@@ -45,3 +45,16 @@
         </div>
     </div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#sendButton').click(function (e) {
+            e.preventDefault();
+            var url = $(this).attr('href');
+            $.get(url, function (data) {
+                console.log('Żądanie wysłane pomyślnie');
+            });
+        });
+    });
+</script>
