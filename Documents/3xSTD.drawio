@@ -1,0 +1,232 @@
+<mxfile host="Electron" modified="2023-11-23T20:01:25.382Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="dVOlQ6_jqxTQbhVuILBi" version="21.5.1" type="device">
+  <diagram name="Strona-1" id="gJLt81arjQDihfM2yrOT">
+    <mxGraphModel dx="1304" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eyNptcym31YR6z-GJi8b-2" value="Przycisk utworzenia&lt;br&gt;nowego newslettera" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;elbow=vertical;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="70" y="167" as="sourcePoint" />
+            <mxPoint x="240" y="166.73938775510194" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-4" target="eyNptcym31YR6z-GJi8b-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-4" value="Akcja zwracająca formularz tworzenia newslettera w kontrolerze" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;endSize=18;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-10" value="Widok formularza" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-9">
+          <mxGeometry x="-0.1203" y="-4" relative="1" as="geometry">
+            <mxPoint x="4" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-5" value="Zwróć widok z formularzem do tworzenia newslettera" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="120" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-11" value="Przycisk zapisu &lt;br&gt;nowego newslettera" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;elbow=vertical;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="70" y="337" as="sourcePoint" />
+            <mxPoint x="240" y="336.7393877551019" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-13" target="eyNptcym31YR6z-GJi8b-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-13" value="Akcja tworzenia nowego newslettera w kontrolerze" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="290" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=oval;endFill=0;endSize=18;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-15" value="Widok" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-14">
+          <mxGeometry x="-0.1203" y="-4" relative="1" as="geometry">
+            <mxPoint x="4" y="277" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-16" value="Zwróć widok z formularzem do tworzenia newslettera" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="460" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-17" target="eyNptcym31YR6z-GJi8b-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-22" value="Dane&lt;br&gt;wadliwe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-21">
+          <mxGeometry x="0.1111" y="-2" relative="1" as="geometry">
+            <mxPoint x="-10" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-17" target="eyNptcym31YR6z-GJi8b-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-25" value="Dane prawidłowe" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-24">
+          <mxGeometry x="-0.3" y="-4" relative="1" as="geometry">
+            <mxPoint x="4" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-17" value="Walidacja czy wprowadzone dane są prawidłowe" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="460" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="660" as="sourcePoint" />
+            <mxPoint x="520" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-29" value="Zapytanie&lt;br&gt;tworzenia" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-27">
+          <mxGeometry x="0.2615" relative="1" as="geometry">
+            <mxPoint x="-12" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-23" target="eyNptcym31YR6z-GJi8b-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-23" value="Akcja tworzenia nowego newslettera" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="630" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-26" target="eyNptcym31YR6z-GJi8b-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-31" value="Id utworzonego&lt;br&gt;newslettera" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-28">
+          <mxGeometry x="-0.3333" y="2" relative="1" as="geometry">
+            <mxPoint x="-20" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.587;entryY=-0.061;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-26" target="eyNptcym31YR6z-GJi8b-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="568" y="730" />
+              <mxPoint x="568" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-43" value="Zwrócenie &lt;br&gt;listy newsletterów" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-41">
+          <mxGeometry x="-0.028" y="1" relative="1" as="geometry">
+            <mxPoint x="51" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-26" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="525" y="645" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-34" target="eyNptcym31YR6z-GJi8b-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-34" value="Zwróć widok z listą wszystkich newsletterów" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="800" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-38" target="eyNptcym31YR6z-GJi8b-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-42" value="Zapytania pobrania&lt;br&gt;listy newsletterów" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-40">
+          <mxGeometry x="0.1684" y="2" relative="1" as="geometry">
+            <mxPoint x="-53" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-38" target="eyNptcym31YR6z-GJi8b-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-38" value="Akcja zwracania listy wszystkich newsletterów" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="800" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-49">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-49" value="Zwrócenie widoku z listą newsletterów" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="970" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-53" value="Przycisk &lt;br&gt;wysyłania wpisu" style="html=1;verticalAlign=bottom;startArrow=circle;startFill=1;endArrow=open;startSize=6;endSize=8;elbow=vertical;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="200" y="1187" as="sourcePoint" />
+            <mxPoint x="370" y="1186.739387755102" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-54" target="eyNptcym31YR6z-GJi8b-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-54" value="Akcja wysyłania wpisu" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1140" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-55" target="eyNptcym31YR6z-GJi8b-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-55" value="Wysłanie requestu do API&lt;br&gt;wysyłania maili" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1140" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.1;entryY=0.342;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-57" target="eyNptcym31YR6z-GJi8b-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="1331" />
+              <mxPoint x="535" y="1331" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-62" value="Zapytanie&lt;br&gt;pobrania danych" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-60">
+          <mxGeometry x="-0.2097" y="-4" relative="1" as="geometry">
+            <mxPoint x="-11" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-57" target="eyNptcym31YR6z-GJi8b-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-57" value="Pobranie danych do wysłania" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1310" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="eyNptcym31YR6z-GJi8b-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1350" as="sourcePoint" />
+            <mxPoint x="590" y="1387.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="460" y="1351" />
+              <mxPoint x="531" y="1351" />
+              <mxPoint x="531" y="1355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-63" value="Dane &lt;br&gt;do wysłania" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-61">
+          <mxGeometry x="0.269" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-59" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1310" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-64" target="eyNptcym31YR6z-GJi8b-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-64" value="Wysłanie każdemu subskrybującemu użytkownikowi maila z treścią wpisu" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1480" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-68" target="eyNptcym31YR6z-GJi8b-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-68" value="Akcja zwracania widoku wpisów" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1480" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=circle;endFill=0;" edge="1" parent="1" source="eyNptcym31YR6z-GJi8b-70">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="215" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-74" value="Widok" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="eyNptcym31YR6z-GJi8b-73">
+          <mxGeometry x="-0.1802" y="-2" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eyNptcym31YR6z-GJi8b-70" value="Zwrócenie widoku wpisów" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1480" width="150" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
